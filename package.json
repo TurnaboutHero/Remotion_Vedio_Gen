@@ -1,0 +1,38 @@
+{
+  "name": "remotion_vedio_gen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "remotion studio",
+    "render": "remotion render HelloWorld out/video.mp4",
+    "render:slideshow": "remotion render ImageSlideshow out/slideshow.mp4",
+    "render:transition": "remotion render SceneTransition out/transition.mp4",
+    "build": "remotion bundle",
+    "upgrade": "remotion upgrade"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TurnaboutHero/Remotion_Vedio_Gen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/TurnaboutHero/Remotion_Vedio_Gen/issues"
+  },
+  "homepage": "https://github.com/TurnaboutHero/Remotion_Vedio_Gen#readme",
+  "dependencies": {
+    "@remotion/cli": "4.0.420",
+    "@remotion/transitions": "4.0.420",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "remotion": "4.0.420"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.13",
+    "@types/react-dom": "19.2.3",
+    "typescript": "5.9.3"
+  }
+}
