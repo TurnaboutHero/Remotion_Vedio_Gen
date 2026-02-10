@@ -1,0 +1,16 @@
+[
+  {
+    "name": "part1",
+    "start_frame": 0,
+    "end_frame": 239,
+    "prompt": "soft digital UI typing sounds, subtle keyboard clicks, gentle whoosh transition, ambient tech atmosphere, light electronic tones",
+    "negative_prompt": "music, speech, voices, harsh, loud, distorted, noise"
+  },
+  {
+    "name": "part2",
+    "start_frame": 230,
+    "end_frame": 449,
+    "prompt": "gentle reveal chime, sparkling digital sounds, soft glowing ambience, satisfying click sound, subtle futuristic tones, calm outro fade",
+    "negative_prompt": "music, speech, voices, harsh, loud, distorted, noise"
+  }
+]
