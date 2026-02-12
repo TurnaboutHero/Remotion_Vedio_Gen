@@ -7,6 +7,7 @@ import {CinematicIntro} from './compositions/CinematicIntro';
 import {TurnaboutHeroIntro} from './compositions/TurnaboutHeroIntro';
 import {YouTubeIntro} from './compositions/YouTubeIntro';
 import {DalGakIntro} from './compositions/DalGakIntro';
+import {MCPShowcase} from './compositions/MCPShowcase';
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -82,6 +83,22 @@ export const RemotionRoot: React.FC = () => {
         fps={30}
         width={1920}
         height={1080}
+      />
+
+      {/* MCP Pipeline Showcase - Manim + Excalidraw 통합 */}
+      <Composition
+        id="MCPShowcase"
+        component={MCPShowcase}
+        durationInFrames={450}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{
+          title: 'MCP Pipeline Demo',
+          subtitle: 'AI-Powered Video Generation',
+          manimVideo: undefined,
+          excalidrawImage: undefined,
+        }}
       />
     </>
   );

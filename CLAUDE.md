@@ -54,9 +54,23 @@ React + TypeScript based Remotion video generation framework for programmatic vi
 - `remotion.config.ts` - Remotion CLI configuration
 - `remotion-effects-reference.md` - 350+ effect prompts reference
 
+## MCP Pipeline Integration
+- **Manim MCP**: 수학 애니메이션 생성 (`../manim-mcp-server/`)
+  - `execute_manim_code`: Manim Python 코드 실행 → MP4 출력
+  - `cleanup_manim_temp_dir`: 임시 파일 정리
+- **Excalidraw MCP**: 손그림 스타일 다이어그램 (`../excalidraw-mcp/`)
+  - `read_me`: Excalidraw 엘리먼트 포맷 참조
+  - `create_view`: JSON 엘리먼트로 다이어그램 생성
+- **MCP 설정**: `.mcp.json` (프로젝트 루트)
+- **통합 컴포지션**: `MCPShowcase` - Manim/Excalidraw 에셋 통합 비디오
+- **파이프라인 스크립트**: `scripts/mcp-pipeline.js`
+- **에셋 디렉토리**: `public/mcp-assets/{manim,excalidraw}/`
+- **상세 가이드**: `docs/mcp-pipeline-guide.md`
+
 ## Important Notes
 - Maintain consistent Remotion package versions across dependencies (currently 4.0.420)
 - MP4 rendering requires width/height to be even numbers
 - Korean text may require system font verification
 - Windows ffmpeg에서는 `h264_mf` 인코더 사용, Linux에서는 `libx264`
 - MMAudio GPU 동시 실행 불가 (순차 처리)
+- MCP 서버 사용 시 Claude Code 재시작 필요할 수 있음

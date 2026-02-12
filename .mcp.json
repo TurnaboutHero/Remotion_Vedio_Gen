@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "manim": {
+      "command": "python",
+      "args": ["D:/Documents/GitHub/manim-mcp-server/src/manim_server.py"],
+      "env": {
+        "MANIM_EXECUTABLE": "manim"
+      }
+    },
+    "excalidraw": {
+      "command": "node",
+      "args": ["D:/Documents/GitHub/excalidraw-mcp/dist/index.js", "--stdio"]
+    }
+  }
+}
