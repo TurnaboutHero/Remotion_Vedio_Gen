@@ -201,7 +201,7 @@ ISC
 
 ## Repository
 
-[GitHub - TurnaboutHero/Remotion_Vedio_Gen](https://github.com/TurnaboutHero/Remotion_Vedio_Gen)
+[GitHub - TurnaboutHero/Remotion_Video_Generator](https://github.com/TurnaboutHero/Remotion_Video_Generator)
 
 ## References
 
