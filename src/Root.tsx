@@ -9,6 +9,7 @@ import {YouTubeIntro} from './compositions/YouTubeIntro';
 import {DalGakIntro} from './compositions/DalGakIntro';
 import {MCPShowcase} from './compositions/MCPShowcase';
 import {KineticTypography} from './compositions/KineticTypography';
+import {MCPIntegration} from './compositions/MCPIntegration';
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -115,6 +116,16 @@ export const RemotionRoot: React.FC = () => {
           primaryColor: '#ffffff',
           accentColor: '#ff6b6b',
         }}
+      />
+
+      {/* MCP Integration - Manim + Excalidraw 실제 통합 데모 */}
+      <Composition
+        id="MCPIntegration"
+        component={MCPIntegration}
+        durationInFrames={510}
+        fps={30}
+        width={1920}
+        height={1080}
       />
     </>
   );
