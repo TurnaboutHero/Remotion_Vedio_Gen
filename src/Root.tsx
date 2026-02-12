@@ -8,6 +8,7 @@ import {TurnaboutHeroIntro} from './compositions/TurnaboutHeroIntro';
 import {YouTubeIntro} from './compositions/YouTubeIntro';
 import {DalGakIntro} from './compositions/DalGakIntro';
 import {MCPShowcase} from './compositions/MCPShowcase';
+import {KineticTypography} from './compositions/KineticTypography';
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -98,6 +99,21 @@ export const RemotionRoot: React.FC = () => {
           subtitle: 'AI-Powered Video Generation',
           manimVideo: undefined,
           excalidrawImage: undefined,
+        }}
+      />
+
+      {/* Kinetic Typography - 동적 타이포그래피 */}
+      <Composition
+        id="KineticTypography"
+        component={KineticTypography}
+        durationInFrames={330}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{
+          words: ['CREATE', 'DESIGN', 'ANIMATE', 'INSPIRE'],
+          primaryColor: '#ffffff',
+          accentColor: '#ff6b6b',
         }}
       />
     </>
